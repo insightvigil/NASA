@@ -1,0 +1,27 @@
+{
+  "name": "01-nasa",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/insightvigil/NASA#readme",
+  "bugs": {
+    "url": "https://github.com/insightvigil/NASA/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insightvigil/NASA.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch":"npm run server & npm run client",
+    "server":"npm run dev --prefix server",
+    "client":"npm start --prefix client",
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install": "npm run install-server && npm run install-client",
+    "deploy": "npm run build --prefix client && npm run server"
+  }
+}
